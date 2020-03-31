@@ -22,6 +22,16 @@ public class Maximum {
             maximum = number3;
         return maximum;
     }
+
+    public static String getMaximumString(String first, String second, String third) {
+        String maximum = first;
+
+        if (second.compareTo(maximum)>0)
+            maximum = second;
+        if (third.compareTo(maximum)>0)
+            maximum = third;
+        return maximum;
+    }
 }
 
 
