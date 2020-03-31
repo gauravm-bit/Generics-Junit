@@ -28,7 +28,29 @@ public class MaximumTest {
         Assert.assertEquals((Integer)19,maximum);
     }
 
+    //TC 2.1
+    @Test
+    public void givenFloats_WhenMaxAtPositionOne_ShouldReturnMaximum() {
+        max = new Maximum();
+        Float maximum = Maximum.getMaximumFloat(12.1f,11.1f,10.1f);
+        Assert.assertEquals((Float)12.1f,maximum);
+    }
 
+    //TC 2.2
+    @Test
+    public void givenFloats_WhenMaxAtPositionTwo_ShouldReturnMaximum() {
+        max = new Maximum();
+        Float maximum = Maximum.getMaximumFloat(11.1f,12.1f,10.1f);
+        Assert.assertEquals((Float)12.1f,maximum);
+    }
+
+    //TC 2.3
+    @Test
+    public void givenFloats_WhenMaxAtPositionThree_ShouldReturnMaximum() {
+        max = new Maximum();
+        Float maximum = Maximum.getMaximumFloat(11.1f,10.1f,12.1f);
+        Assert.assertEquals((Float)12.1f,maximum);
+    }
 
 
 }
