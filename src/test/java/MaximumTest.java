@@ -49,7 +49,7 @@ public class MaximumTest {
     //TC 3.1
     @Test
     public void givenString_WhenMaxAtPositionOne_ShouldReturnMaximum() {
-        String maximum = (String) maximumObject.getMaximum("platypus","ant","horse","dog","horse");
+        String maximum = (String) maximumObject.getMaximum("platypus","ant","horse","dog");
         Assert.assertEquals((String)"platypus",maximum);
     }
 
@@ -63,7 +63,7 @@ public class MaximumTest {
     //TC 3.3
     @Test
     public void givenString_WhenMaxAtPositionThree_ShouldReturnMaximum() {
-        String maximum = (String) maximumObject.getMaximum("dog","ant","platypus","horse");
+        String maximum = (String) maximumObject.getMaximum("dog","ant","platypus","horse","cat","human");
         Assert.assertEquals((String)"platypus",maximum);
     }
 
