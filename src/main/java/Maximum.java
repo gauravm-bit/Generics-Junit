@@ -1,23 +1,18 @@
+import java.util.Arrays;
+import java.util.Collection;
+import java.util.Collections;
+
 public class Maximum<E extends Comparable<E>> {
-    E element1;
-    E element2;
-    E element3;
+   E[] arrayElements;
 
 
-    public Maximum(E element1, E element2, E element3) {
-        this.element1 = element1;
-        this.element2 = element2;
-        this.element3 = element3;
+    public Maximum(E[] arrayElements) {
+        this.arrayElements = arrayElements;
     }
 
-    public  E getMaximum(){
-
-        E maximum = element1;
-        if (element2.compareTo(maximum)>0)
-            maximum = element2;
-        if (element3.compareTo(maximum)>0)
-            maximum = element3;
-        return maximum;
+    public static <E extends Comparable> E getMaximum(E... arrayElements) {
+        Arrays.sort(arrayElements);
+        return arrayElements[arrayElements.length-1];
     }
 
 }
