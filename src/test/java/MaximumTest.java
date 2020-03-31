@@ -9,7 +9,7 @@ public class MaximumTest {
     public void givenIntegers_WhenMaxAtPositionOne_ShouldReturnMaximum() {
         max = new Maximum();
         Integer maximum = Maximum.getMaximumInteger(19,17,15);
-        Assert.assertEquals(19,(int)maximum);
+        Assert.assertEquals((Integer)19,maximum);
     }
 
     //TC 1.2
@@ -17,7 +17,7 @@ public class MaximumTest {
     public void givenIntegers_WhenMaxAtPositionTwo_ShouldReturnMaximum() {
         max = new Maximum();
         Integer maximum = Maximum.getMaximumInteger(17, 19, 15);
-        Assert.assertEquals(19, (int) maximum);
+        Assert.assertEquals((Integer)19,maximum);
     }
 
     //TC 1.3
@@ -25,7 +25,10 @@ public class MaximumTest {
     public void givenIntegers_WhenMaxAtPositionThree_ShouldReturnMaximum() {
         max = new Maximum();
         Integer maximum = Maximum.getMaximumInteger(15, 17, 19);
-        Assert.assertEquals(19, (int) maximum);
+        Assert.assertEquals((Integer)19,maximum);
     }
+
+
+
 
 }
