@@ -46,4 +46,25 @@ public class MaximumTest {
         Assert.assertEquals((Float)12.1f,maximum);
     }
 
+    //TC 3.1
+    @Test
+    public void givenString_WhenMaxAtPositionOne_ShouldReturnMaximum() {
+        String maximum = Maximum.getMaximumString("Z","Y","X");
+        Assert.assertEquals((String)"Z",maximum);
+    }
+
+    //TC 3.2
+    @Test
+    public void givenString_WhenMaxAtPositionTwo_ShouldReturnMaximum() {
+        String maximum = Maximum.getMaximumString("Y","Z","X");
+        Assert.assertEquals((String)"Z",maximum);
+    }
+
+    //TC 3.3
+    @Test
+    public void givenString_WhenMaxAtPositionThree_ShouldReturnMaximum() {
+        String maximum = Maximum.getMaximumString("X","Y","Z");
+        Assert.assertEquals((String)"Z",maximum);
+    }
+
 }
